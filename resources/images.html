@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta>
+<script>
+var slideIndex = 0;
+  
+function plusDivs(n) {
+  slideIndex += n;
+  showDivs();
+}
+
+function showDivs() {
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  if (slideIndex >= 3) slideIndex = 0;
+  else if (slideIndex <= -1) slideIndex = 2;
+  x[slideIndex].style.display = "block";
+}
+</script>
+</meta>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body onLoad="showDivs()">
+
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+  
+  <div class="slides">
+    <img src="PCGui.png" width="92%"/>
+  </div>
+  <div class="slides">
+    <img src="droid_up_main.png" width="22%"/>
+    <img src="droid_side_main.png" width="70%"/>
+  </div>
+  <div class="slides">
+    <img src="upright_droid.png" width="22%"/>
+    <img src="droid_side.png" width="70%"/>
+  </div>
+
+</body>
+</html>

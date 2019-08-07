@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>DCD - Dirt Cheap Dishes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="shortcut icon" href="icon.ico" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body class="w3-content" style="max-width:1500px; background-color: #212121">
+
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  
+</header>
+
+<!-- Pages -->
+<div style="text-align:center;">
+  <button class="w3-button w3-transparent w3-text-white w3-round" onclick="window.open('index.html','_self')">Home <i class="fa fa-home"></i></button>
+  <button class="w3-button w3-transparent w3-text-white w3-round" onclick="window.open('about.html','_self')">About <i class="fas fa-info-circle"></i></button>
+  <button class="w3-button w3-transparent w3-text-white w3-round" onclick="window.open('contact.html','_self')">Contact Us <i class="fa fa-envelope"></i></button>
+  <button class="w3-button w3-transparent w3-text-white w3-round" onclick="window.open('suggest.html','_self')">Suggest a Recipe <i class="fa fa-hamburger"></i></button>
+  <button class="w3-button w3-transparent w3-text-white w3-round" onclick="window.open('https://github.com/DirtCheapDishes/DCD','_blank')">GitHub Repository <i class="fab fa-github"></i></button>
+  <button class="w3-button w3-transparent w3-text-white w3-round" onclick="window.open('https://github.com/DirtCheapDishes/DCD/projects','_blank')">Kanban Board <i class="fas fa-clipboard-list"></i></button>
+  <button class="w3-button w3-transparent w3-text-white w3-round" onclick="window.open('https://github.com/DirtCheapDishes/DCD/blob/master/LICENSE','_blank')">Source Code License <i class="fas fa-code"></i></button>
+</div>
+
+<!-- The Contact Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <h1 class="w3-jumbo"><b>Suggest a "Global" Recipe</b></h1>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Complete this form!</b></h1>
+    <div class="w3-container">
+      <form action="https://send.pageclip.co/WSUHzHVp0nuzBXejYDv6O8TYpvKKosIr/Recipes" class="pageclip-form" method="post" style="margin-top:25px;">
+        <label>First Name/Username</label>
+        <input class="w3-input" type="text" name="name" placeholder="Ex: John, janeD03" pattern=".{3,}" required title="3 characters minimum"/>
+
+        <label>E-mail</label>
+        <input class="w3-input" type="email" name="email" placeholder="JohnSmith@example.com" required/>
+
+        <label>Recipe Name</label>
+        <input class="w3-input" type="text" name="recipe" placeholder="Chicken and Dumplings" pattern=".{10,}" required title="10 characters minimum"/>
+
+        <label>Difficulty</label>
+        <input class="w3-input" type="number" name="difficulty" min="1" max="5" placeholder="1 (easiest) to 5 (hardest)" required/>
+
+        <label>Time to Prepare</label>
+        <input class="w3-input" type="number" name="time" min="5" placeholder="Num. of minutes" required/>
+
+        <label>Cost</label>
+        <input class="w3-input" type="number" name="time" min="0" placeholder="USD ($)" required/>
+
+        <label>Ingredients and Instructions</label>
+        <textarea class="w3-input" id="txtarea" name="body" placeholder="Write the body of your recipe here." style="height:200px" minlength="200" required></textarea>
+
+        <button type="submit" class="w3-button w3-green w3-round pageclip-form__submit" style="margin-top:10px;">
+          <span>Send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <div class="w3-section w3-xlarge">
+    <i class="fab fa-facebook-square w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <!-- Pages -->
+  <button class="w3-button w3-transparent w3-round" onclick="window.open('index.html','_self')">Home <i class="fa fa-home"></i></button>
+  <button class="w3-button w3-transparent w3-round" onclick="window.open('about.html','_self')">About <i class="fas fa-info-circle"></i></button>
+  <button class="w3-button w3-transparent w3-round" onclick="window.open('contact.html','_self')">Contact Us <i class="fa fa-envelope"></i></button>
+  <button class="w3-button w3-transparent w3-round" onclick="window.open('suggest.html','_self')">Suggest a Recipe <i class="fa fa-hamburger"></i></button>
+  <button class="w3-button w3-transparent w3-round" onclick="window.open('https://github.com/DirtCheapDishes/DCD','_blank')">GitHub Repository <i class="fab fa-github"></i></button>
+  <button class="w3-button w3-transparent w3-round" onclick="window.open('https://github.com/DirtCheapDishes/DCD/projects','_blank')">Kanban Board <i class="fas fa-clipboard-list"></i></button>
+  <button class="w3-button w3-transparent w3-round" onclick="window.open('https://github.com/DirtCheapDishes/DCD/blob/master/LICENSE','_blank')">Source Code License <i class="fas fa-code"></i></button>
+</footer>
+<script type="text/javascript">
+  var form = document.querySelector('.pageclip-form')
+  Pageclip.form(form, {
+    onSubmit: function validate(scope) {
+      console.log(scope)
+      alert("Ran!");
+      var str=document.getElementById("txtarea").value
+      if (str.length != 0) {
+        for (var i = 1; i < str.length; i++) {
+          if(str.charAt(i-1) != str.charAt(i)) break;
+          if(i == (str.length - 1)) {
+            alertValid(); 
+            return false;
+          }
+        }
+      } else {
+        return false;
+      }
+    },
+    onResponse: function (error, response) { },
+    successTemplate: '<span>Thank you!</span>'
+  })
+
+  function alertValid() {
+    alert("Please enter a valid recipe body.");
+    document.getElementById("txtarea").focus();
+  }
+</script>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+</html>
